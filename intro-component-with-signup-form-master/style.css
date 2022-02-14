@@ -2,6 +2,45 @@
   body {
     background-image: url("images/bg-intro-mobile.png");
     background-color: #ff7978;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 80px;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  .free {
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    padding: 2px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px rgb(0 0 0 / 0.1);
+  }
+
+  .formulier {
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px rgb(0 0 0 / 0.1);
+  }
+
+  input {
+    padding: 20px 60px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .free-second {
+    background-color: hsl(154, 59%, 51%);
+  }
+
+  .terms {
+    color: hsl(246, 25%, 77%);
   }
 
   .attribution {
