@@ -1,0 +1,14 @@
+@media (min-width: 375px) {
+  body {
+    background-image: url("images/bg-intro-mobile.png");
+    background-color: #ff7978;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
