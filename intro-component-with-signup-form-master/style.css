@@ -1,75 +1,113 @@
-@media (min-width: 375px) {
+body {
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: #ff7978;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  max-width: max-content;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+
+.intro {
+  text-align: center;
+  width: 100%;
+}
+
+.second-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.free {
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  margin-top: 50px;
+  padding: 2px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px rgb(0 0 0 / 0.1);
+}
+
+.formulier {
+  background-color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 7px rgb(0 0 0 / 0.2);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 20px 120px 20px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #e5e5e5;
+}
+
+input[type="text"] {
+  text-align: left;
+  font-weight: 600;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  text-align: center;
+  padding: 20px 65px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 5px rgba(44, 165, 113, 0.9);
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 13px;
+  padding: 5px 25px 20px 30px;
+}
+
+.terms-link {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* @media (min-width: 500px) {
   body {
-    background-image: url("images/bg-intro-mobile.png");
-    background-color: #ff7978;
-    font-family: "Poppins", sans-serif;
-    color: #fff;
-    font-size: 16px;
-    margin: 80px 20px;
-  }
-
-  .intro {
-    text-align: center;
-  }
-
-  .free {
-    text-align: center;
-    background-color: hsl(248, 32%, 49%);
-    margin-top: 50px;
-    padding: 2px 30px;
-    border-radius: 10px;
-    box-shadow: 0px 5px rgb(0 0 0 / 0.1);
-  }
-
-  .formulier {
-    background-color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px rgb(0 0 0 / 0.1);
-  }
-
-  input {
-    padding: 20px 120px 20px 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: 2px solid #e5e5e5;
-  }
-
-  input[type="text"] {
-    text-align: left;
-    font-weight: 600;
-  }
-
-  button {
-    background-color: hsl(154, 59%, 51%);
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: none;
-    text-align: center;
-    padding: 20px 65px;
-    border-radius: 5px;
-    box-shadow: 0px 5px rgba(44, 165, 113, 0.9);
-  }
-
-  .terms {
-    color: hsl(246, 25%, 77%);
-    font-size: 13px;
-    padding: 5px 25px 20px 30px;
-  }
-
-  .terms-link {
-    text-decoration: none;
-    color: hsl(0, 100%, 74%);
-  }
-
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+    margin: 80px 80px;
   }
 }
+
+@media (min-width: 650px) {
+  body {
+    margin: 80px 150px;
+  }
+}
+
+@media (min-width: 750px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+} */
