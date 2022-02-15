@@ -66,6 +66,14 @@ input[type="text"] {
   font-weight: 600;
 }
 
+form p {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 0;
+}
+
 button {
   background-color: hsl(154, 59%, 51%);
   color: #fff;
