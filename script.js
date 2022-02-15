@@ -8,5 +8,38 @@ const button = document.getElementById("btn");
 button.addEventListener("click", myFunction);
 
 function myFunction() {
-  alert("help");
+  let firstName = document.getElementById("first").value;
+  let lastName = document.getElementById("last").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  let firstText = document.getElementById("firstText");
+  let lastText = document.getElementById("lastText");
+  let emailText = document.getElementById("emailText");
+  let passwordText = document.getElementById("passwordText");
+  const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+  if (firstName === "") {
+    firstText.style.visibility = "visible";
+  } 
+  if (lastName === "") {
+    lastText.style.visibility = "visible";
+  }
+  if (email === "") {
+    emailText.style.visibility = "visible";
+  } else if (!filter.test(email)){
+    emailText.innerHTML = "Looks like this is not an email";
+    emailText.style.visibility = "visible";
+  }
+
+  if (password === "") {
+    passwordText.style.visibility = "visible";
+  }
+
+
+
+
+
+
+
+  console.log(firstName, lastName, email, password);
 }
