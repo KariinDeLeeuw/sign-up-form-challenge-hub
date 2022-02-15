@@ -69,8 +69,9 @@ input {
   border: 2px solid var(--grayish-blue);
 }
 
-input[type="text"] {
-  text-align: left;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   font-weight: 600;
 }
 
