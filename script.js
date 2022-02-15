@@ -8,6 +8,7 @@ const button = document.getElementById("btn");
 button.addEventListener("click", myFunction);
 
 function myFunction() {
+  let allFilled = true;
   let firstName = document.getElementById("first").value;
   let lastName = document.getElementById("last").value;
   let email = document.getElementById("email").value;
@@ -19,27 +20,29 @@ function myFunction() {
   const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
   if (firstName === "") {
+    allFilled = false;
     firstText.style.visibility = "visible";
   } 
   if (lastName === "") {
+    allFilled = false;
     lastText.style.visibility = "visible";
   }
   if (email === "") {
+    allFilled = false;
     emailText.style.visibility = "visible";
   } else if (!filter.test(email)){
+    allFilled = false;
     emailText.innerHTML = "Looks like this is not an email";
     emailText.style.visibility = "visible";
   }
 
   if (password === "") {
+    allFilled = false;
     passwordText.style.visibility = "visible";
   }
 
-
-
-
-
-
-
-  console.log(firstName, lastName, email, password);
+  if(allFilled){
+    alert(`Thanks ${firstName} for enrolling!`);
+    location.reload();
+  }
 }
